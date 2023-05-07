@@ -1,0 +1,17 @@
+//Para saber se impar e positivo
+import java.util.Scanner;
+public class PositivoEImpar {
+public static void main(String[]args){
+	Scanner scanner= new Scanner(System.in);
+	    System.out.println("Digite um número: "); 
+	    int numero = scanner.nextInt();
+
+	    if ((numero & 1) == 1 && (numero >> 31) == 0) {
+	        System.out.println("O número " + numero + " é positivo e ímpar.");
+	    } else {
+	        System.out.println("O número " + numero + " não é positivo e ímpar.");
+	    }
+
+	    scanner.close();
+	}
+}
